@@ -7,6 +7,10 @@ package solent_campers.Modal;
 
 import java.util.Date;
 
+/**
+ *
+ * @author kaur
+ */
 public class Booking {
 
     public Date getBookingdate() {

@@ -332,6 +332,8 @@ public class BookingPanel extends javax.swing.JPanel {
 
     private void cbCStsItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbCStsItemStateChanged
         // TODO add your handling code here:
+    if(cbCSts.getSelectedItem()!=null)
+    {
         camping_sites sitelist = csh.getSite(Integer.parseInt(cbCSts.getSelectedItem().toString()));
         String col[] = {"id", "Site Name", "Region"};
         DefaultTableModel tableModel = new DefaultTableModel(col, 0);
@@ -346,6 +348,7 @@ public class BookingPanel extends javax.swing.JPanel {
 
 
         jTable2.setModel(tableModel);
+    }
     }//GEN-LAST:event_cbCStsItemStateChanged
 
     private void cbCStsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbCStsActionPerformed
